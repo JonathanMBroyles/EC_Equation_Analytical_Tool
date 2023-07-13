@@ -152,8 +152,8 @@ def update_graph(floor_systems, span_length_range):
     fig.layout.images = [dict(
             source=pyLogo,
             xref="paper", yref="paper",
-            x = 0.5, y = 0.35,
-            sizex = 0.75, sizey = 0.75, sizing="stretch", opacity=0.9,
+            x = 0.5, y = 0.45,
+            sizex = 0.75, sizey = 0.6, sizing="stretch", opacity=0.75,
             xanchor = "center", yanchor = "bottom"
         )]
     
