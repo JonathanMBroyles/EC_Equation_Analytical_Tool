@@ -76,7 +76,7 @@ app.layout = html.Div([
     dcc.Checklist(
         id="Floor System Checklist",
         options=["RC Flat Plate", "RC Flat Slab", "RC One-Way Slab", "RC Two-Way Slab with Beams", "RC Two-Way Waffle Slab", "RC Voided Plate", "PT Flat Plate", "PT Hollow Core Slab", "PT Voided Plate (Orthogonal Layout)", "PT Voided Plate (Diagonal Layout)"],
-        value=["RC Flat Plate", "RC Voided Plate", "PT Flat Plate", "PT Voided Plate (Orthogonal Layout)"],
+        value=["RC Flat Plate", "RC Voided Plate", "PT Flat Plate"],
         inline=True),
 
     
@@ -152,7 +152,7 @@ def update_graph(floor_systems, span_length_range):
     fig.layout.images = [dict(
             source=pyLogo,
             xref="paper", yref="paper",
-            x = 0.5, y = -0.5,
+            x = 0.5, y = 0.35,
             sizex = 0.75, sizey = 0.75, sizing="stretch", opacity=0.9,
             xanchor = "center", yanchor = "bottom"
         )]
