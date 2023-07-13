@@ -58,7 +58,7 @@ df_Composite_EC = pd.DataFrame(floor_array, columns = floor_columns)
 
 
 from PIL import Image
-pyLogo = Image.open("cora-logo-300dpi.png")
+pyLogo = Image.open("Logo_header_white.png")
 
 
 # In[7]:
@@ -152,8 +152,8 @@ def update_graph(floor_systems, span_length_range):
     fig.layout.images = [dict(
             source=pyLogo,
             xref="paper", yref="paper",
-            x = 1.1, y = .15,
-            sizex = 0.125, sizey = 0.125, sizing="stretch", opacity=0.9,
+            x = 0.5, y = -0.15,
+            sizex = 0.25, sizey = 0.75, sizing="stretch", opacity=0.9,
             xanchor = "center", yanchor = "bottom"
         )]
     
